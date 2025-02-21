@@ -1,0 +1,117 @@
+.movie__block-item {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-basis: 0.5;
+  padding: 10px;
+  max-width: 47%;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.movie__block-item-img img {
+  display: block;
+  max-width: 10em;
+}
+
+.movie__block-item-info {
+  margin-left: 20px;
+}
+.movie__block-item-info h3 {
+  font-size: 25px;
+  color: aqua;
+}
+.movie__block-item-info p {
+  margin-top: 20px;
+  color: rgb(193, 191, 191);
+  line-height: 1.5rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.border_rate_low {
+  margin-left: auto;
+  align-self: right;
+  padding: 10px;
+  text-align: right;
+  border-radius: 50%;
+  align-self: right;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #e90000;
+}
+.border_rate_medium {
+  margin-left: auto;
+  align-self: right;
+  padding: 10px;
+  border: 2px solid #e9d100;
+  border-radius: 50%;
+  text-align: right;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.movie__block-item-info-rate {
+  margin-left: auto;
+  align-self: right;
+  padding: 10px;
+  border: 2px solid #e97e00;
+  border-radius: 50%;
+  text-align: right;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.border_rate_high {
+  margin-left: auto;
+  align-self: right;
+  padding: 10px;
+  border: 2px solid #66e900;
+  border-radius: 50%;
+  text-align: right;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.movie__block-item-info span {
+  color: rgba(193, 191, 191, 0.7);
+}
+.movie__block-item-info-genres {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.movie__block-item-info-genres span {
+  margin-right: 10px;
+  display: inline-block;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  padding: 3px 8px;
+  border-radius: 8px;
+  width: max-content;
+  margin-top: 10px;
+}
+.movie__block-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
