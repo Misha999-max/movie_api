@@ -1,3 +1,3 @@
 # React + Vite
 
-https://movie-api-one-iota.vercel.app/
+https://movie-api-42pu.vercel.app/
