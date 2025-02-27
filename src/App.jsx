@@ -68,7 +68,7 @@ function App() {
   };
 
   const debouncedSearch = debounce(async (value) => {
-    if (value) {
+    if (value.length > 2) {
       try {
         const searchMovies = await body.getSearchForInput(value, pageNumber);
         setMovies(searchMovies.results);
@@ -131,7 +131,7 @@ function App() {
         </button>
       </div>
       <div className="movie__search-input">
-        {!rated ? <Input placeholder="Basic usage" onChange={(e) => handleChangeValue(e)} /> : null}
+        {!rated ? <Input placeholder="Basic usage" value={search} onChange={(e) => handleChangeValue(e)} /> : null}
       </div>
 
       <div className="movie__block">

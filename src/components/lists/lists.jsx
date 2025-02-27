@@ -5,7 +5,6 @@ import { Flex, Rate } from 'antd';
 // import { FrownOutlined, MehOutlined, SmileOutlined } from '@ant-design/icons';
 import './lists.css';
 function Lists({ item, genres, handleRateClick }) {
-  console.log(item);
   const [value, setValue] = useState(0);
   const BASE_IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
   const genresNmae = item.genre_ids.map((id) => genres.find((genre) => genre.id === id)).filter(Boolean);
@@ -63,6 +62,7 @@ function Lists({ item, genres, handleRateClick }) {
               allowHalf
               defaultValue={item.vote_average}
               count={10}
+              color="rgb(28, 202, 217)"
               value={value}
               style={{
                 fontSize: 28,
